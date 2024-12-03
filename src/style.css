@@ -1,0 +1,607 @@
+/* Réinitialisation des marges et des paddings */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, p, span {
+    margin: 0;
+    padding: 0;
+}
+
+/* Palette de couleurs */
+:root {
+    --primary-color: #226D68;
+    --secondary-color: #FEEAA1;
+    --background-color: #ECF8F6;
+    --accent-color: #18534F;
+    --text-color: #333;
+}
+
+/* Liens */
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Sections */
+.section1, .section2, .section3, .section4, .section5 {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+/* En-têtes de sections */
+h2 {
+    font-family: 'Great Vibes', cursive;
+    color: var(--primary-color);
+    font-size: 5em;
+    text-align: center;
+    margin: 30px 0;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+/* Section 1 */
+.section1 {
+    background-image: url('/image/libanais.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display : flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.container_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 95%;
+    opacity: 1;
+}
+
+.titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 70%;
+    font-size: 100px;
+    color: var(--secondary-color);
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    word-spacing: 6rem;
+}
+
+.slogan {
+    word-spacing: 0.5rem;
+    text-shadow: 
+    1px 1px 0 black,
+    -1px 1px 0 black,
+    1px -1px 0 black,
+    -1px -1px 0 black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    margin-top: -10px;
+}
+
+.menuHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    cursor: grab;
+    width: 100%;
+    height: 15%;
+    font-size: 40px;
+    text-shadow: 4px 5px 10px rgba(0, 0, 0, 1);
+}
+
+.menuHeader a {
+    font-size: 1.1em;
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.menuHeader a:hover {
+    color: white;
+}
+
+.margaux{
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    margin: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Section 2 */
+.section2 {
+    display: flex;
+    flex-direction: row;
+    background: var(--background-color);
+}
+
+.presentation {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 45px;
+}
+
+#presentation {
+    color: var(--accent-color);
+    width: 70%;
+    height: auto;
+}
+
+.textePres {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 3px solid white;
+}
+
+.photoPres1 {
+    border: 3px solid var(--background-color);
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    width: 20%;
+    height: 41vh;
+    margin-top: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photoPres2 {
+    margin-top: 400px;
+    border: 3px solid var(--background-color);
+    box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: white;
+    width: 20%;
+    height: 50vh;
+}
+
+.photo2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.signature, .signature2{
+    margin: 15px;
+    margin-top: -30px;
+    text-align: end;
+    font-family: 'Great Vibes', cursive;
+    color: white;
+}
+
+.signature2{
+    margin-top: -35px;
+}
+
+
+/* Section 3 */
+.section3 {
+    background: #fff5d3;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+.menu-item {
+    flex: 1; 
+    padding: 10px;
+    text-align: center;
+}
+
+.menu1 {
+    height: 500px;
+    width: 25%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+a {
+    color: #18534F;
+}
+
+.photoMenu {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Section 4 */
+
+.prestation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 65%;
+}
+
+.textePresta{
+    width: 30%;
+    height: auto;
+    padding: 10px 20px 20px 20px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 3px solid white;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.CGV{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+/* SEction5 */
+.section5 {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color : black;
+}
+
+.a_withe{
+    color: white;
+}
+
+.loc{
+    color : var(--secondary-color);
+    font-size: 1.5em;
+}
+
+.contactTitre h2 {
+    font-size: 4em; 
+    color: white; 
+    text-align: center; 
+    margin: 50px;
+    text-align: center;
+    width: 600px;
+    word-spacing: 1rem;
+}
+
+
+
+.wrapperColumns {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.remerciement, 
+.remerciement_2 {
+    flex: 1; 
+    max-width: 35%; 
+    max-height: 150px; 
+    font-size: 0.80em;
+}
+
+.texteRemerciement{
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 3px solid rgba(0, 0, 0, 0.25);
+    margin-bottom: 60px;
+    padding : 10px;
+    font-size: 1em;
+}
+
+.wrapperContact {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: auto;
+    font-size: 0.90em;
+}
+
+.contact-item{
+    margin: 20px;
+}
+
+
+.mail{
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Pour les écrans de moins de 1400px */
+@media (max-width: 1450px) {
+
+    h2{
+        margin-top: 20px;
+    }
+
+    /* section1 */
+    .titre{
+        font-size: 4.5em;
+    }
+
+    .menuHeader{
+        font-size: 2em;
+    }
+
+    .slogan{
+        font-size: 30px;
+    }
+
+
+    /* section2 */
+    .photoPres1{
+        margin-top: 20px;
+    }
+
+    .presentation{
+        margin-top:0px;
+    }
+
+    .photoPres2{
+        margin-top: 330px;
+    }
+
+
+    /* section3 */
+    .menu1{
+        height: 500px;
+    }
+
+
+    /* section4 */
+    .textePresta{
+        font-size: 0.95em;
+    }
+
+    /* section5 */
+    .contactTitre h2{
+        margin: 20px;
+        font-size: 3em; 
+        height: auto;
+        width: 500px;
+    }
+
+    .texteRemerciement{
+        margin-top: 10px;
+        margin-bottom : 30px;
+        font-size: 0.95em;
+    }
+
+    .loc{
+        font-size: 1.25em;
+    }
+
+    iframe{
+        width: 300px;
+    }
+
+    .contact-item{
+        font-size: 0.95em;
+    }
+
+    .wrapperContact{
+        margin-top: 60px;
+    }
+
+}
+
+/* Pour les écrans de moins de 768px */
+@media (max-width: 1264px) {
+
+    .menu1{
+        width: 30%;
+    }
+
+}
+
+@media (max-width: 1450px) {
+
+    .loc{
+        font-size: 0.97em;
+    }
+}
+
+
+/* Pour les écrans de moins de 768px */
+@media (max-width: 768px) {
+
+    .section1, .section2, .section3, .section4, .section5 {
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    h2{
+        font-size: 4em;
+        margin-bottom: 15px;
+    }
+
+    /* Section 1 */
+
+    .titre {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 2.7em;
+        text-align: center;
+        word-spacing: normal;
+    }
+
+    .slogan {
+        font-size: 0.5em;
+        text-align: center;
+    }
+
+    .menuHeader{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.90em;
+        height: 300px;
+    }
+
+    /* Section 2 */
+    .section2 {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .presentation {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+
+    .textePres {
+        width: 100%;
+        font-size: 0.90em;
+        align-items: center;
+    }
+
+    .photoPres1, .photoPres2 {
+        width: 80%;
+        height: 350px;
+        margin: 10px auto;
+    }
+
+    /* Section 3 - Menu */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 1700px;
+    }
+
+    .menu1 {
+        width: 90%;
+        margin: 10px 0;
+        height: 450px;
+    }
+
+    /* Section 4 */
+
+
+    .prestation {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .textePresta {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .CGV{
+        margin-top: 50px;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+
+
+
+/*section5 */
+
+.section5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contactTitre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+.contactTitre, h2{
+    font-size: 0.75em;
+    width: 400px;
+}
+
+.contact{
+    height: 1900px;
+}
+
+.wrapperColumns {
+    flex-direction: column;
+}
+
+.remerciement, .remerciement_2{
+    max-width: 100%;
+    flex: none;
+}
+
+a{
+    color: black;
+}
+
+.wrapperContact{
+    min-width: 100%;
+    margin-top: 600px;
+    margin-bottom: 50px;
+}
+
+.loc{
+    font-size: 1.20em;
+}
+
+}
