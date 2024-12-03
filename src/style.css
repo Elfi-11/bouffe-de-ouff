@@ -497,6 +497,10 @@ a {
         align-items: center;
     }
 
+    #presentation, #menu, #prestation{
+        font-size: 3em;
+    }
+
     .presentation {
         width: 100%;
         margin: 30px 0;
