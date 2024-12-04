@@ -609,3 +609,10 @@ a{
 }
 
 }
+
+
+@media (max-width: 420px) {
+    .remerciement, .remerciement_2{
+        font-size: 0.75em;
+    }
+}
