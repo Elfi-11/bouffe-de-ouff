@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merci pour votre message - Bouffe de Ouff, traiteur végétarien à Limoux et Haute Vallée de l'Aude">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src 'self'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="/image/x-icon.png" type="image/x-icon">
+    <title>Merci pour votre message - Bouffe de Ouff</title>
+    <style>
+        .merci-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--background-color);
+        }
+        
+        .merci-title {
+            font-family: 'Great Vibes', cursive;
+            color: var(--primary-color);
+            font-size: 4rem;
+            margin-bottom: 2rem;
+        }
+        
+        .merci-message {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin-bottom: 2rem;
+        }
+        
+        .retour-btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-top: 2rem;
+        }
+        
+        .retour-btn:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .merci-title {
+                font-size: 3rem;
+            }
+            
+            .merci-message {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main class="merci-container">
+            <h1 class="merci-title">Merci pour votre message !</h1>
+            <div class="merci-message">
+                <p>Votre message a bien été envoyé. Je vous remercie de l'intérêt que vous portez à Bouffe de Ouff.</p>
+                <p>Je vous répondrai dans les plus brefs délais, généralement sous 24 à 48 heures.</p>
+                <p>En attendant, n'hésitez pas à consulter les menus et prestations disponibles sur le site.</p>
+            </div>
+            <a href="index.html" class="retour-btn">Retour à l'accueil</a>
+        </main>
+        <footer>
+            <p>&copy; 2023 Bouffe de Ouff - Tous droits réservés</p>
+        </footer>
+    </div>
+</body>
+</html> 

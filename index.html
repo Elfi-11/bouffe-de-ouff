@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bouffe de Ouff - Traiteur végétarien spécialisé dans les cuisines indienne, libanaise et provençale. Découvrez nos menus et prestations à Limoux, Villelongue d'Aude et ses environs.">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src 'self' https://www.openstreetmap.org;">
+    <meta name="description" content="Bouffe de Ouff - Traiteur végétarien à Limoux, Castelreng et Haute Vallée de l'Aude. Cuisine indienne, libanaise et provençale. Service de chef à domicile et livraison sur les marchés locaux.">
+    <meta name="keywords" content="traiteur végétarien, Limoux, Haute Vallée de l'Aude, Castelreng, cuisine indienne, cuisine libanaise, cuisine provençale, chef à domicile, traiteur événementiel, traiteur bio, Villelongue d'Aude, Quillan, Espéraza">
+    <meta name="author" content="Bénédicte - Bouffe de Ouff">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="FR-11">
+    <meta name="geo.placename" content="Castelreng, Limoux, Haute Vallée de l'Aude">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src 'self' https://www.openstreetmap.org https://www.google.com https://*.google.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';">
     <link rel="stylesheet" href="src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,13 +21,14 @@
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Bouffe de Ouff",
-            "image": "https://www.bouffedeouff.fr/image/portrait%20cheffe.jpg",
-            "description": "Traiteur végétarien spécialisé dans les cuisines indienne, libanaise et provençale à Limoux, Villelongue d'Aude et ses environs.",
+            "image": "https://www.bouffedeouff.fr/image/portrait-cheffe.jpg",
+            "description": "Traiteur végétarien spécialisé dans les cuisines indienne, libanaise et provençale à Limoux, Villelongue d'Aude, Quillan, Espéraza et toute la Haute Vallée de l'Aude.",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Place de l'Église",
-                "addressLocality": "Villelongue d'Aude",
+                "streetAddress": "Rec d'Al Four",
+                "addressLocality": "Castelreng",
                 "postalCode": "11300",
+                "addressRegion": "Aude",
                 "addressCountry": "FR"
             },
             "telephone": "+33 6 62 63 23 40",
@@ -32,48 +38,79 @@
             "servesCuisine": ["Indienne", "Libanaise", "Provençale", "Végétarienne", "Italienne"],
             "menu": "https://www.bouffedeouff.fr/menu",
             "acceptsReservations": "true",
+            "areaServed": [
+                {
+                    "@type": "GeoCircle",
+                    "geoMidpoint": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 43.055,
+                        "longitude": 2.096
+                    },
+                    "geoRadius": "30000"
+                },
+                {
+                    "@type": "City",
+                    "name": "Limoux"
+                },
+                {
+                    "@type": "City",
+                    "name": "Villelongue d'Aude"
+                },
+                {
+                    "@type": "City",
+                    "name": "Quillan"
+                },
+                {
+                    "@type": "City",
+                    "name": "Espéraza"
+                },
+                {
+                    "@type": "City",
+                    "name": "Haute Vallée de l'Aude"
+                }
+            ],
             "openingHoursSpecification": [
                 {
                     "@type": "OpeningHoursSpecification",
                     "dayOfWeek": ["Monday"],
                     "opens": "08:00",
-                    "closes": "23:00"
+                    "closes": "20:00"
                 },
                 {
                     "@type": "OpeningHoursSpecification",
                     "dayOfWeek": ["Tuesday"],
                     "opens": "08:00",
-                    "closes": "23:00"
+                    "closes": "20:00"
                 },
                 {
                     "@type": "OpeningHoursSpecification",
                     "dayOfWeek": ["Wednesday"],
                     "opens": "08:00",
-                    "closes": "23:00"
+                    "closes": "20:00"
                 },
                 {
                     "@type": "OpeningHoursSpecification",
                     "dayOfWeek": ["Thursday"],
                     "opens": "08:00",
-                    "closes": "23:00"
+                    "closes": "20:00"
                 },
                 {
                     "@type": "OpeningHoursSpecification",
                     "dayOfWeek": ["Friday"],
                     "opens": "08:00",
-                    "closes": "23:30"
+                    "closes": "20:00"
                 },
                 {
                     "@type": "OpeningHoursSpecification",
                     "dayOfWeek": ["Saturday"],
                     "opens": "08:00",
-                    "closes": "23:30"
+                    "closes": "20:00"
                 },
                 {
                     "@type": "OpeningHoursSpecification",
                     "dayOfWeek": ["Sunday"],
                     "opens": "08:00",
-                    "closes": "23:30"
+                    "closes": "20:00"
                 }
             ],
             "aggregateRating": {
@@ -90,171 +127,276 @@
             "sameAs": [
                 "https://www.facebook.com/bouffedeouff",
                 "https://www.instagram.com/bouffedeouff"
-            ]
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Menus Traiteur Végétarien",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "FoodService",
+                            "name": "Menu Indien Végétarien"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "FoodService",
+                            "name": "Menu Libanais Végétarien"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "FoodService",
+                            "name": "Menu Provençal/Italien Végétarien"
+                        }
+                    }
+                ]
+            }
         }
-        </script>
-        
-
-    <title>Bouffe de Ouff</title>
+    </script>
+    <title>Bouffe de Ouff - Traiteur végétarien à Limoux, Castelreng et Haute Vallée de l'Aude</title>
 </head>
 <body>
     <div class="container">
-        <section class="section1">
+        <header class="section1">
             <div class="container_header">
                 <div class="titre">
                     <h1>Bouffe de Ouff</h1>
                     <h4 class="slogan">Cuisine Végétarienne de toutes les couleurs</h4>
                 </div>
-                <div class="menuHeader">
+                <nav class="menuHeader" aria-label="Menu principal">
                     <a href="#presentation"><h3>Présentation</h3></a>
                     <a href="#menu"><h3>Menus</h3></a>
                     <a href="#prestation"><h3>Prestation</h3></a>
                     <a href="#contact"><h3>Contact</h3></a>
-                </div>
+                </nav>
             </div>
             <div class="margaux"><p>Photo by Margaux Vallet</p></div>
-        </section>
-        <section class="section2">
-            <div class="photoPres1"> 
-                <img class="photo" src="/image/portrait cheffe.jpg" alt="Bénédicte, cheffe cuisine végétarienne, traiteur à Limoux, Villelongue d'Aude">
-                <div class="signature"><p>Photo by Margaux Vallet</p></div>
-            </div>
-            <div class="presentation">
-                <h2 id="presentation">Présentation</h2>
+        </header>
+        <main>
+            <section class="section2">
+                <div class="photoPres1"> 
+                    <img class="photo" src="/image/portrait_cheffe.jpg" alt="Bénédicte, cheffe cuisine végétarienne et traiteur à Limoux, Castelreng et Haute Vallée de l'Aude" loading="lazy" width="400" height="600">
+                    <div class="signature"><p>Photo by Margaux Vallet</p></div>
+                </div>
+                <div class="presentation">
+                    <h2 id="presentation">Présentation</h2>
                     <div class="textePres">
-                        <p>Chères Gourmandes, Chers Gourmands!</br>
-                        </br>Si ce péché de gourmandise nous unit, nous allons naturellement bien nous entendre !! </br>
-                        Je m'appelle Bénédicte et je suis heureuse de vous proposer mon savoir-faire culinaire afin de vous régaler !!</br>
-                        Bouffe de Ouff est née il y a peu, suite à une reconversion professionnelle, mais ma place dans la cuisine date du temps de ma mère et de ma grand-mère qui m'ont transmis leur passion et leur générosité bien visibles lors de préparations de repas riches d'Amour et de Joie.</br>
-                        À mon tour de vous faire partager cet univers qui m'est cher, à travers trois principaux menus végétariens : Libanais, Provençal/Italien et Indien. </br>
-                        Étant de nature curieuse et audacieuse, cette liste n'est pas exhaustive et vos demandes particulières sont les bienvenues.</br>
-                        Pour la confection des plats, j'utilise des denrées de qualité, pour la plupart issues de l'agriculture biologique et locale.</br>
-                        Les légumes sont de saison et me sont fournis en grande partie par Bert et Marianne, un couple de maraîchers expérimentés travaillant en agriculture biologique à quelques kilomètres de chez moi.</br>
-                        Enfin, vous ne trouverez aucun produit industriel transformé dans vos assiettes.</p>    
+                        <p>Chères Gourmandes, Chers Gourmands!</p><br>
+                        <p>Si ce péché de gourmandise nous unit, nous allons naturellement bien nous entendre !!</p>
+                        <p>Je m'appelle Bénédicte et je suis heureuse de vous proposer mon savoir-faire culinaire afin de vous régaler dans toute la <strong>Haute Vallée de l'Aude</strong> !!</p>
+                        <p>Bouffe de Ouff est née il y a peu, suite à une reconversion professionnelle, mais ma place dans la cuisine date du temps de ma mère et de ma grand-mère qui m'ont transmis leur passion et leur générosité bien visibles lors de préparations de repas riches d'Amour et de Joie.</p>
+                        <p>À mon tour de vous faire partager cet univers qui m'est cher, à travers trois principaux menus végétariens : Libanais, Provençal/Italien et Indien, disponibles à <strong>Limoux</strong>, <strong>Castelreng</strong>, <strong>Villelongue d'Aude</strong>, <strong>Quillan</strong>, <strong>Espéraza</strong> et leurs environs.</p>
+                        <p>Étant de nature curieuse et audacieuse, cette liste n'est pas exhaustive et vos demandes particulières sont les bienvenues.</p>
+                        <p>Pour la confection des plats, j'utilise des denrées de qualité, pour la plupart issues de l'agriculture biologique et locale de l'<strong>Aude</strong>.</p>
+                        <p>Les légumes sont de saison et me sont fournis en grande partie par Bert et Marianne, un couple de maraîchers expérimentés travaillant en agriculture biologique à quelques kilomètres de chez moi à <strong>Castelreng</strong>.</p>
+                        <p>Enfin, vous ne trouverez aucun produit industriel transformé dans vos assiettes.</p>    
                     </div>
-            </div>
-            <div class="photoPres2">
-                <img class="photo2" src="/image/La cheffe, traiteur.jpg" alt="Photo de Bénédicte, cheffe cuisinière et traiteur en cuisine végétarienne à Limoux et Villelongue d'Aude"
-                >
-                <div class="signature2"><p>Photo by Margaux Vallet</p></div>
-            </div>
-        </section>      
-        <section class="section3">
-            <h2 id="menu">Menus</h2>
-            <div class="menu">
-                <div class="menu1"><a href="/menu/Menu_Indien.pdf"
-                    download="Menu_Indien_Bouffe_De_Ouff">Voir le menu complet</a>
-                    <img class="photoMenu" src="/image/Menu_Indien.png" alt="Menu Indien proposé par Bouffe de Ouff, traiteur en cuisine végétarienne à Limoux">
                 </div>
-                <div class="menu1"><a href="/menu/Menu_Libanais.pdf"
-                    download="Menu_Libanais_Bouffe_De_Ouff">Voir le menu complet</a>
-                    <img class="photoMenu" src="/image/Menu_Libanais.png" alt="Menu Libanais proposé par Bouffe de Ouff, traiteur spécialisé en cuisine végétarienne">
+                <div class="photoPres2">
+                    <img class="photo2" src="/image/La_cheffe_traiteur.jpg" alt="Bénédicte, cheffe cuisinière et traiteur végétarien à Limoux, Castelreng, Quillan, Espéraza et toute la Haute Vallée de l'Aude" loading="lazy" width="400" height="600">
+                    <div class="signature2"><p>Photo by Margaux Vallet</p></div>
                 </div>
-                <div class="menu1"><a href="/menu/Menu_Provençal_Italien.pdf"
-                    download="Menu_Provençial/Italien_Bouffe_De_Ouff">Voir le menu complet</a>
-                    <img class="photoMenu" src="/image/Menu_Provençale_Italien.png" alt="Menu Provençal et Italien par Bouffe de Ouff, traiteur végétarien à Limoux et ses environs">
+            </section>      
+            <section class="section3">
+                <h2 id="menu">Menus</h2>
+                <div class="menu">
+                    <div class="menu1">
+                        <a href="/menu/Menu_Indien.pdf" download="Menu_Indien_Bouffe_De_Ouff" class="menu-link">Voir le menu complet</a>
+                        <img class="photoMenu" src="/image/Menu_Indien.png" alt="Menu Indien végétarien proposé par Bouffe de Ouff, traiteur à Limoux, Castelreng et Haute Vallée de l'Aude" loading="lazy" width="300" height="400">
+                    </div>
+                    <div class="menu1">
+                        <a href="/menu/Menu_Libanais.pdf" download="Menu_Libanais_Bouffe_De_Ouff" class="menu-link">Voir le menu complet</a>
+                        <img class="photoMenu" src="/image/Menu_Libanais.png" alt="Menu Libanais végétarien proposé par Bouffe de Ouff, traiteur à Limoux, Castelreng et Haute Vallée de l'Aude" loading="lazy" width="300" height="400">
+                    </div>
+                    <div class="menu1">
+                        <a href="/menu/Menu_Provençal_Italien.pdf" download="Menu_Provençal_Italien_Bouffe_De_Ouff" class="menu-link">Voir le menu complet</a>
+                        <img class="photoMenu" src="/image/Menu_Provençale_Italien.png" alt="Menu Provençal et Italien végétarien par Bouffe de Ouff, traiteur à Limoux, Castelreng et Haute Vallée de l'Aude" loading="lazy" width="300" height="400">
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="section4">
-            <h2 id="prestation">Prestations</h2>
-            <div class="prestation">
-                <div class= "textePresta">
+            </section>
+            <section class="section4 prestation-section">
+                <h2 id="prestation" class="section-title">Prestations</h2>
+                <div class="prestation-cards">
+                    <div class="prestation-card">
                         <h3>Commandez et récupérez sur les marchés!</h3>
-                        <p>(À partir de 4 personnes)</p>
-                        </br>
-                        </br></br><p>
-                        Vous pouvez venir chercher votre commande les 1er et 3ème jeudis du mois à Villelongue D'Aude (place de l'église à partir de 18h), 
-                        le vendredi matin sur le marché de Limoux, le samedi matin sur le marché de Quillan et le dimanche matin sur celui d'Espéraza.</br>
-                        </p></br></br>  
-                </div>
-                <div class= "textePresta">
+                        <p class="prestation-subtitle">(À partir de 4 personnes)</p>
+                        <div class="prestation-content">
+                            <p>Vous pouvez venir chercher votre commande les 1er et 3ème jeudis du mois à <strong>Villelongue D'Aude</strong> (place de l'église à partir de 18h), 
+                            le vendredi matin sur le marché de <strong>Limoux</strong>, le samedi matin sur le marché de <strong>Quillan</strong> et le dimanche matin sur celui d'<strong>Espéraza</strong>, dans la belle <strong>Haute Vallée de l'Aude</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="prestation-card">
                         <h3>Cheffe à domicile, je viens cuisiner chez vous!</h3>
-                        <p>(De 8 à 12 personnes)</p></br>
-                        <p>35€ par personne pour un menu comprenant une entrée, une soupe, un plat, un dessert et une boisson.</p>
-                        <p>J'investis votre cuisine pour vous immerger dans mon monde culinaire.</p>
-                        <p>Choisissez un menu unique pour tous les convives parmi ceux proposés sur le site.
-                        </br>Cette prestation inclut le service et le nettoyage de la vaisselle.</p></br>
-                        </p>    
-                </div>
-                <div class= "textePresta">
+                        <p class="prestation-subtitle">(De 8 à 12 personnes)</p>
+                        <div class="prestation-content">
+                            <p>35€ par personne pour un menu comprenant une entrée, une soupe, un plat, un dessert et une boisson.</p>
+                            <p>J'investis votre cuisine pour vous immerger dans mon monde culinaire, partout dans la <strong>Haute Vallée de l'Aude</strong>, à <strong>Limoux</strong>, <strong>Castelreng</strong>, <strong>Quillan</strong>, <strong>Espéraza</strong> et les environs.</p>
+                            <p>Choisissez un menu unique pour tous les convives parmi ceux proposés sur le site.</p>
+                            <p>Cette prestation inclut le service et le nettoyage de la vaisselle.</p>
+                        </div>
+                    </div>
+                    <div class="prestation-card">
                         <h3>Traiteur événementiel!</h3>
-                        <p>(De 20 à 50 personnes)</p>
-                        </br>
-                        <p>Pour vos rassemblements professionnels ou privés, je vous propose la livraison d'un menu composé : </br>  
-                            - D'une entrée ou d'une soupe</br>  
-                            - D'un plat </br>
-                            - D'un dessert</br></br>
-                        <p>Tarif sur devis, incluant les frais de livraison</p>
-                        </br>
-                </div>
-            </div>
-            <p class="CGV"> CGV : Commande 5 jours avant retrait ou livraison, accompte de 20% et signature d'un devis.</p>
-        </section>
-        <section class="section5">
-            <div id="contact" class="contactTitre">
-                <h2>Contact & Remerciements :</h2>
-            </div>
-            <div class="contact">
-                <div class="wrapperColumns">
-                    <!-- Remerciements à gauche -->
-                    <div class="remerciement">
-                        <div class="texteRemerciement">
-                            <p><strong>Les légumes par Bert et Marianne :</strong></p>
-                            <p>Au Rec d'Al Four à Castelreng, ce couple de maraîchers expérimentés travaille en agriculture biologique.</p>
-                            <p>Vous pouvez les retrouver le jeudi soir sur leur exploitation, le vendredi matin sur le marché de Limoux et le samedi matin sur le marché de Quillan.</p>
-                        </div>
-                        <div class="texteRemerciement">
-                            <p><strong>Les photos par Margaux Vallet :</strong></p>
-                            <p>Photographe artisane de talent, vous pouvez retrouver son travail sur son <a href="https://www.margauxvallet.com/" target="_blank" rel="noopener" class="a_withe" aria-label="Visitez le site de Margaux Vallet, photographe artisane">site</a>.</p>
-                            <p>Margaux est une femme dynamique et déterminée, douée d'une sensibilité fascinante qui lui permet de capturer la beauté de ce qui l'entoure.</p>
-                            <p>À apprécier sans modération !</p>
-                        </div>
-                        <div class="texteRemerciement">
-                            <p><strong>Des recettes par Fanny :</strong></p>
-                            <p>Parmi toutes mes sources, le blog de recettes de cuisine de ma chère amie Fanny, <a href="https://www.recettesdecuisinedumonde.com/" target="_blank" rel="noopener" class="a_withe" aria-label="Découvrez les recettes de cuisine du monde de Fanny sur son blog Balico and Co">balico and co</a>, m'inspire plus que de raison !</p>
-                            <p>Fanny est douce, curieuse et généreuse. Ses recettes sont toujours très soignées, et sa gourmandise ainsi que son amour du bon se ressentent dans ses préparations.</p>
-                            <p>Sa table me comble de bonheur à chaque fois ! N'hésitez pas à découvrir ses merveilleuses recettes !</p>
-                        </div>
-                    </div>
-        
-                    <!-- Infos de contact en dessous de la carte -->
-                    <div class="wrapperContact">
-                        <h3 class="loc">Situé à Villelongue d'Aude :</h3>
-                        <div class="iframe-container">
-                            <iframe width="400" height="300" scrolling="no" marginheight="0" marginwidth="0" 
-                                src="https://www.openstreetmap.org/export/embed.html?bbox=2.25%2C43.05%2C2.08%2C43.08&amp;layer=mapnik&amp;marker=43.055%2C2.096"
-                                title="Traiteur restaurateur cuisine à Villelongue d'Aude, dix minutes de Limoux dans l'Aude">
-                            </iframe>
-                        </div>
-                        <div class="contact-item">
-                            <p><span class="loc">Numéro de téléphone :</span>&nbsp;06 62 63 23 40</p>
-                            <p><span class="loc">Adresse mail :</span>&nbsp;<a href="mailto:bouffedeouff@gmail.com"><span class="mail">bouffedeouff@gmail.com</span></a></p>
-                        </div>
-                    </div>
-        
-                    <!-- Remerciements à droite -->
-                    <div class="remerciement_2">
-                        <div class="texteRemerciement">
-                            <p><strong>Le pain par le fournil du Clanpain et la boulangerie Escoffier :</strong></p>
-                            <p>Maéva et Nicolas du fournil le Clanpain se sont associés avec Simon et Laetitia, propriétaires de la <a href="https://www.facebook.com/profile.php?id=100072304460223" target="_blank" rel="noopener" class="a_withe" aria-label="Explorez la boulangerie Escoffier et leurs délicieuses créations sur leur page Facebook">boulangerie Escoffier à Limoux</a>, afin de créer une entreprise familiale qui mélange leurs savoir-faire pour notre plus grand plaisir.</p>
-                            <p>N'hésitez pas à aller découvrir leurs délicieuses pâtisseries et pains confectionnés avec passion.</p>
-                        </div>
-                        <div class="texteRemerciement">
-                            <p><strong>Les épices de Magali :</strong></p>
-                            <p>La pétillante et généreuse Magali propose des épices rares et fabuleuses. Je vous invite à la découvrir via son <a href="https://www.magepices09.com/" target="_blank" rel="noopener" class="a_withe" aria-label="Découvrez les épices rares et fabuleuses de Magali sur son site">site</a>, où vous trouverez ses jours de marchés.</p>
-                            <p>Son stand est magnifiquement fourni, vous y dénicherez de vraies pépites.</p>
-                        </div>
-                        <div class="texteRemerciement">
-                            <p><strong>La création de ce site internet par Marina :</strong></p>
-                            <p>Cette femme merveilleuse fait partie de mes amies les plus proches. C'est grâce à elle que vous pouvez me découvrir sur le web.</p>
-                            <p>Aujourd'hui, pleine de bonne humeur, de dynamisme et d'ingéniosité, elle a fabriqué ce site de toutes pièces ! "From scratch", comme elle le dit si bien.</p>
-                            <p>Retrouvez-la sur <a href="https://www.linkedin.com/in/marina-estanco-525a21256/" target="_blank" rel="noopener" class="a_withe" aria-label="Consultez le profil LinkedIn de Marina Estanco, créatrice du site Bouffe de Ouff">LinkedIn</a>.</p>
+                        <p class="prestation-subtitle">(De 20 à 50 personnes)</p>
+                        <div class="prestation-content">
+                            <p>Pour vos rassemblements professionnels ou privés dans la région de <strong>Limoux</strong>, <strong>Castelreng</strong> et toute la <strong>Haute Vallée de l'Aude</strong>, je vous propose la livraison d'un menu composé :</p>
+                            <ul class="prestation-list">
+                                <li>D'une entrée ou d'une soupe</li>
+                                <li>D'un plat</li>
+                                <li>D'un dessert</li>
+                            </ul>
+                            <p>Tarif sur devis, incluant les frais de livraison</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>        
+                <div class="cgv-container">
+                    <div class="cgv-box">
+                        <h3>Conditions Générales de Vente</h3>
+                        <p class="CGV">Commande 5 jours avant retrait ou livraison, acompte de 20% et signature d'un devis.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section5" id="contact">
+                <div class="container">
+                    <h2 class="contact-title">Contactez-moi</h2>
+                    
+                    <!-- Conteneur pour les sections de contact -->
+                    <div class="contact-container">
+                        
+                        <!-- Section "Où me trouver" -->
+                        <div class="contact-info">
+                            <h3 class="contact-subtitle">Où me trouver</h3>
+                            
+                            <!-- Conteneur de la carte -->
+                            <div class="map-container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23393.464220459774!2d2.2075861871093743!3d43.05500000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ae7a5c2c3c9e7f%3A0x406f69c2f3d94d0!2s11300%20Castelreng!5e0!3m2!1sfr!2sfr!4v1621936314117!5m2!1sfr!2sfr" height="250" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                            
+                            <!-- Informations de contact -->
+                            <div class="contact-details">
+                                <div class="contact-detail-item">
+                                    <span class="contact-icon">📍</span>
+                                    <span><strong>Castelreng</strong>, <strong>Haute Vallée de l'Aude</strong> (11300)</span>
+                                </div>
+                                <div class="contact-detail-item">
+                                    <span class="contact-icon">📞</span>
+                                    <a href="tel:+33612345678">06 12 34 56 78</a>
+                                </div>
+                                <div class="contact-detail-item">
+                                    <span class="contact-icon">✉️</span>
+                                    <a href="mailto:contact@bouffedeouff.fr">contact@bouffedeouff.fr</a>
+                                </div>
+                                <div class="contact-detail-item">
+                                    <span class="contact-icon">🔗</span>
+                                    <div class="social-links">
+                                        <a href="#" class="social-link">Instagram</a>
+                                        <a href="#" class="social-link">Facebook</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Formulaire de contact -->
+                        <div class="contact-form-container">
+                            <h3 class="contact-subtitle">Contactez-moi directement</h3>
+                            <form action="https://formsubmit.co/bouffedeouff@gmail.com" method="POST">
+                                <input type="hidden" name="_subject" value="Nouveau message du site Bouffe de Ouff">
+                                <input type="hidden" name="_captcha" value="true">
+                                <input type="hidden" name="_next" value="merci.html">
+                                <div class="form-group">
+                                    <label for="name">Nom</label>
+                                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">Envoyer</button>
+                            </form>
+                        </div>
+                        
+                        <!-- Section Remerciements -->
+                        <h3 class="remerciements-title">Mes partenaires et collaborateurs</h3>
+                        <div class="remerciements-container">
+                            <div class="remerciement-card">
+                                <h4>Les légumes par Bert et Marianne</h4>
+                                <div class="remerciement-content">
+                                    <p>Au Rec d'Al Four à Castelreng, ce couple de maraîchers expérimentés travaille en agriculture biologique.</p>
+                                    <p>Vous pouvez les retrouver le jeudi soir sur leur exploitation, le vendredi matin sur le marché de Limoux et le samedi matin sur le marché de Quillan.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="remerciement-card">
+                                <h4>Les photos par Margaux Vallet</h4>
+                                <div class="remerciement-content">
+                                    <p>Photographe artisane de talent, vous pouvez retrouver son travail sur son <a href="https://www.margauxvallet.com/" target="_blank" rel="noopener">site</a>.</p>
+                                    <p>Margaux est une femme dynamique et déterminée, douée d'une sensibilité fascinante qui lui permet de capturer la beauté de ce qui l'entoure.</p>
+                                    <p>À apprécier sans modération !</p>
+                                </div>
+                            </div>
+                            
+                            <div class="remerciement-card">
+                                <h4>Des recettes par Fanny</h4>
+                                <div class="remerciement-content">
+                                    <p>Parmi toutes mes sources, le blog de recettes de cuisine de ma chère amie Fanny, <a href="https://www.recettesdecuisinedumonde.com/" target="_blank" rel="noopener">balico and co</a>, m'inspire plus que de raison !</p>
+                                    <p>Fanny est douce, curieuse et généreuse. Ses recettes sont toujours très soignées, et sa gourmandise ainsi que son amour du bon se ressentent dans ses préparations.</p>
+                                    <p>Sa table me comble de bonheur à chaque fois ! N'hésitez pas à découvrir ses merveilleuses recettes !</p>
+                                </div>
+                            </div>
+                            
+                            <div class="remerciement-card">
+                                <h4>Le pain par le fournil du Clanpain et la boulangerie Escoffier</h4>
+                                <div class="remerciement-content">
+                                    <p>Maéva et Nicolas du fournil le Clanpain se sont associés avec Simon et Laetitia, propriétaires de la <a href="https://www.facebook.com/profile.php?id=100072304460223" target="_blank" rel="noopener">boulangerie Escoffier à Limoux</a>, afin de créer une entreprise familiale qui mélange leurs savoir-faire pour notre plus grand plaisir.</p>
+                                    <p>N'hésitez pas à aller découvrir leurs délicieuses pâtisseries et pains confectionnés avec passion.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="remerciement-card">
+                                <h4>Les épices de Magali</h4>
+                                <div class="remerciement-content">
+                                    <p>La pétillante et généreuse Magali propose des épices rares et fabuleuses. Je vous invite à la découvrir via son <a href="https://www.magepices09.com/" target="_blank" rel="noopener">site</a>, où vous trouverez ses jours de marchés.</p>
+                                    <p>Son stand est magnifiquement fourni, vous y dénicherez de vraies pépites.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="remerciement-card">
+                                <h4>La création de ce site internet par Marina</h4>
+                                <div class="remerciement-content">
+                                    <p>Cette femme merveilleuse fait partie de mes amies les plus proches. C'est grâce à elle que vous pouvez me découvrir sur le web.</p>
+                                    <p>Aujourd'hui, pleine de bonne humeur, de dynamisme et d'ingéniosité, elle a fabriqué ce site de toutes pièces ! "From scratch", comme elle le dit si bien.</p>
+                                    <p>Retrouvez-la sur <a href="https://www.linkedin.com/in/marina-estanco-525a21256/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Bouffe de Ouff - Tous droits réservés</p>
+            <a href="#" id="back-to-top" aria-label="Retour en haut de la page">↑</a>
+        </footer>
+        
     </div>
+    <script>
+        // Script pour le bouton "Retour en haut"
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
