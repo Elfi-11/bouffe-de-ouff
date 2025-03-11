@@ -875,7 +875,7 @@ p {
     .contact-detail-item,
     .form-group label,
     .CGV {
-        font-size: 0.95rem;
+        font-size: 1rem;
         line-height: 1.5;
     }
 
@@ -947,7 +947,7 @@ p {
 
     .textePres {
         width: 100%;
-        font-size: 0.90em;
+        font-size: 1em;
         align-items: center;
     }
 
@@ -1053,8 +1053,40 @@ p {
 
 /* Pour les petits mobiles */
 @media (max-width: 480px) {
+
     #presentation, #menu, #prestation, .contact-title, .remerciements-title, .section-title {
         font-size: 3.5rem;
+    }
+
+    /* Section 1 */
+    .titre {
+        font-size: 3.2em;
+    }
+
+    .slogan {
+        font-size: 0.70em;
+        text-align: center;
+    }
+
+    .menuHeader {
+        font-size: 1.3em;
+    }
+
+    .menuHeader a {
+        margin: 0.5rem 0;
+    }
+
+
+    /* Section 2 */
+    .photoPres1, .photoPres2 {
+        width: 75%;
+        height: 500px;
+        margin: 10px auto;
+        object-fit: cover;
+    }
+
+    .textePres {
+        font-size: 1em;
     }
     
     .menu1 {
