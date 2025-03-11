@@ -1079,8 +1079,8 @@ p {
 
     /* Section 2 */
     .photoPres1, .photoPres2 {
-        width: 75%;
-        height: 500px;
+        width: 85%;
+        height: 450px;
         margin: 10px auto;
         object-fit: cover;
     }
