@@ -170,7 +170,7 @@
                 <nav class="menuHeader" aria-label="Menu principal">
                     <a href="#presentation"><h3>Présentation</h3></a>
                     <a href="#menu"><h3>Menus</h3></a>
-                    <a href="#prestation"><h3>Prestation</h3></a>
+                    <a href="#prestation"><h3>Prestations</h3></a>
                     <a href="#contact"><h3>Contact</h3></a>
                 </nav>
             </div>
@@ -303,10 +303,11 @@
                         <!-- Formulaire de contact -->
                         <div class="contact-form-container">
                             <h3 class="contact-subtitle">Contactez-moi directement</h3>
-                            <form action="https://formsubmit.co/bouffedeouff@gmail.com" method="POST">
+                            <form action="https://formsubmit.co/bouffedeouff@gmail.com" method="POST" enctype="multipart/form-data">
                                 <input type="hidden" name="_subject" value="Nouveau message du site Bouffe de Ouff">
                                 <input type="hidden" name="_captcha" value="true">
                                 <input type="hidden" name="_next" value="merci.html">
+                                <input type="hidden" name="_template" value="table">
                                 <div class="form-group">
                                     <label for="name">Nom</label>
                                     <input type="text" id="name" name="name" placeholder="Votre nom" required>
