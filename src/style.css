@@ -258,10 +258,11 @@ h3 {
 }
 
 .menu1 {
-    height: 500px;
+    height: 600px;
     width: 25%;
     text-align: center;
     margin-top: 30px;
+    border: 2px solid black;
 }
 
 .photoMenu {
