@@ -45,7 +45,7 @@ a {
 }
 
 /* Sections */
-.section1, .section2, .section3, .section4, .section5 {
+.section1, .section2, .section3, .section4, .section5, .section6 {
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
@@ -390,6 +390,53 @@ h3 {
 .cgv-box .CGV {
     margin: 0;
     font-style: italic;
+}
+
+/* Section 6 - CGV */
+.section6 {
+    background-color: var(--background-color);
+    padding: 2rem 0 4rem;
+}
+
+.cgv-title {
+    padding: 0 1rem;
+}
+
+.section6 .wrapperColumns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cgv-column {
+    flex: 1 1 420px;
+    min-width: 0;
+    max-width: 620px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: rgba(34, 109, 104, 0.08);
+    border: 1px solid rgba(34, 109, 104, 0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.cgv-content {
+    text-align: justify;
+}
+
+.cgv-content p + p {
+    margin-top: 0.75rem;
+}
+
+.cgv-content p strong {
+    color: var(--accent-color);
 }
 
 /* Section 5 - Contact et Remerciements */
